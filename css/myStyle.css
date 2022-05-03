@@ -1,0 +1,164 @@
+
+
+#startScreen {
+    position: absolute;
+    background: rgb(0, 2, 104);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 56.25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+
+  .bg-primary {
+      background-color: rgb(44, 0, 102);
+  }
+
+  .bg-secondary {
+      background-color: rgb(0, 2, 104);
+  }
+
+  @font-face {
+    font-family: bodyFont;
+    src: url(/assets/fonts/BOMBFONT_TRIAL.ttf);
+  }
+
+  @font-face {
+    font-family: titleFont;
+    src: url(/assets/fonts/Chopsic.otf);
+  }
+
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #film{
+      position:absolute;
+      top:50px;
+
+  }
+
+  .video-container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+/* .video-container video {
+  width: 100vh;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  z-index: 0;
+} */
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 10px;
+}
+
+.masthead {
+    background: transparent;
+}
+
+#bgCover {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    height: 110%;
+    z-index: 1000;
+    background: black; 
+    top: 0;
+    left: 0;
+}
+
+#mainCode {
+    display: none;
+}
+
+
+iframe {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* width: 100vw;
+  height: 100vh; */
+
+  /* transform: translate(-50%, -50%); */
+  width: 100%;
+  height: 100%;
+  /* position: absolute;
+  object-fit: cover;
+  z-index: 0; */
+}
+
+
+
+header {
+  z-index: 10;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+}
