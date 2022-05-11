@@ -37,12 +37,12 @@
 
   @font-face {
     font-family: bodyFont;
-    src: url(assets/fonts/BOMBFONT_TRIAL.ttf);
+    src: url(../assets/fonts/BOMBFONT_TRIAL.ttf);
   }
 
   @font-face {
     font-family: titleFont;
-    src: url(assets/fonts/Chopsic.otf);
+    src: url(../assets/fonts/Chopsic.otf);
   }
 
 
